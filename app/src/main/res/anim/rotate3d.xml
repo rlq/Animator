@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rotates="http://schemas.android.com/apk/res-auto"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:shareInterpolator="true">
+    <!--自定义动画类Rotate3dAnimation会导致其报Unknown animation name的异常,需修改AnimationUtils.loadAnimation-->
+    <rotates:com.demo.customanimation.Rotate3dAnimation
+        rotates:rollType="x"
+        rotates:fromDeg="100"
+        rotates:toDeg="0"
+        rotates:pivotX="50%"
+        rotates:pivotY="50%"
+        android:duration="400"/>
+
+</set>
